@@ -1,7 +1,7 @@
 let socket
 let color = '#FFF'
 let strokeWidth = 4
-const PORT = process.env.PORT || 5000;
+const PORT = location.port
 
 function setup() {
 	// Cria o canvas
