@@ -1,6 +1,7 @@
 let socket
 let color = '#FFF'
 let strokeWidth = 4
+const PORT = process.env.PORT || 5000;
 
 function setup() {
 	// Cria o canvas
@@ -9,7 +10,8 @@ function setup() {
 	cv.background(0)
 
 	// Inicia a conexão com o server via socket.io
-	socket = io.connect('http://localhost:3000')
+	// socket = io.connect('http://localhost:3000')
+	socket = io.connect(`https://node-drawing-app.herokuapp.com:${PORT}`)
 
 	// Função de callback
 	socket.on('mouse', data => {
