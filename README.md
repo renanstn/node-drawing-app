@@ -6,6 +6,10 @@ Com ela é possível que várias pessoas desenhem simultaneamente no mesmo canva
 
 App finalizado e rodando [aqui](https://node-drawing-app.herokuapp.com/)
 
+-----
+
+<img src="https://github.com/renanstd/node-drawing-app/blob/main/screenshots/01.png" width="701.5" height="352"/>
+
 ## TODO
 
 - [ ] Melhorar o modo que as cores são escolhidas
@@ -13,7 +17,3 @@ App finalizado e rodando [aqui](https://node-drawing-app.herokuapp.com/)
 - [ ] Implementar um chat ao lado do canvas
 - [ ] Solicitar um nome de usuário a cada novo usuário logado
 - [ ] Adicionar mensagens de "usuário conectado" e "usuário desconectado"
-
------
-
-<img src="https://github.com/renanstd/node-drawing-app/blob/main/screenshots/01.png" width="701.5" height="352"/>
