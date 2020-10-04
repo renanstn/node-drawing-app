@@ -1,13 +1,14 @@
 const http = require('http')
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT || 5000;
 
 app.use(express.static('public'))
-app.set('port', '3000')
+app.set('port', PORT)
 
 const server = http.createServer(app)
 server.on('listening', () => {
-    console.log('Listening on port 3000')
+    console.log(`Listening on port ${PORT}`)
 })
 
 // Web socket
@@ -19,4 +20,4 @@ io.sockets.on('connection', (socket) => {
 	socket.on('disconnect', () => console.log('Client has disconnected'))
 })
 
-server.listen('3000')
+server.listen(PORT)
