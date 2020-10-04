@@ -1,0 +1,1 @@
+web: cd drawingapp && node server
